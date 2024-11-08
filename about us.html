@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivier Online Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header bg-light">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <a href="#" class="navbar-brand">
+          <img src="path-to-logo.png" alt="Olivier Online Shop Logo" class="logo">
+        </a>
+
+        <!-- Toggle Button for Small Screens -->
+        <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Main Navigation Links (hidden on small screens) -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="contact us.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="navbar-buttons">
+            <a href="login-sign in.html" class="btn btn-outline-primary mr-2">Login</a>
+            <a href="login-sign in.html" class="btn btn-primary">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu for Small Screens -->
+  <div id="sidebarMenu" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+    <a href="index.html">Home</a>
+    <a href="about us.html">About Us</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact us.html">Contact</a>
+    <a href="login-sign in.html" class="btn btn-outline-primary d-block mt-3">Login</a>
+    <a href="login-sign in.html" class="btn btn-primary d-block mt-2">Sign Up</a>
+  </div>
+
+  <!-- JavaScript for Sidebar Toggle -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebarMenu");
+      sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+    }
+  </script>
+
+  <!-- Bootstrap and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+  
+  <!-- About Us Section -->
+  <section id="about-us" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">About Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">Welcome to Olivier Online, your one-stop destination for premium electronics and accessories! We are dedicated to offering the latest and greatest products at unbeatable prices, delivered straight to your doorstep.</p>
+          <p>Founded with a passion for technology, we aim to provide our customers with top-quality products, excellent customer service, and a seamless online shopping experience. Whether you're looking for the latest smartphone, laptop, wearables, or home gadgets, we have it all, backed by secure payment options and fast delivery.</p>
+          <p>Our team of experts ensures that each product we sell meets the highest standards of quality and performance, so you can shop with confidence. We believe in making technology accessible to everyone, whether you're a tech enthusiast or a first-time buyer.</p>
+          <p>Thank you for choosing Olivier Online — your trusted partner in the world of electronics!</p>
+        </div>
+        <div class="col-md-6">
+          <img src="image1.jpg" class="img-fluid rounded" alt="About Olivier Online" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+ 
+  
+  <!-- Footer -->
+<footer class="footer bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Contact Information -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <p>Feel free to reach out with any inquiries or feedback.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Olivier Street, Tech City</li>
+            <li><i class="fas fa-phone-alt"></i> +1 800 123 4567</li>
+            <li><i class="fas fa-envelope"></i> support@olivieronline.com</li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light">Home</a></li>
+            <li><a href="about us.html" class="text-light">About Us</a></li>
+            <li><a href="shop.html" class="text-light">Shop</a></li>
+            <li><a href="contact us.html" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Stay Connected (Newsletter) -->
+        <div class="col-md-4 mb-4">
+          <h5>Stay Connected</h5>
+          <p>Sign up for our newsletter to receive the latest updates and promotions.</p>
+          <form action="#" method="POST" class="newsletter-form">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Olivier Online Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Add Font Awesome Icons for the contact section -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+</body>
+</html>

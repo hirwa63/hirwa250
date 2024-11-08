@@ -1,0 +1,278 @@
+/* Basic Styling for Header */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+.header {
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position:sticky;
+    top: 0;
+    z-index: 999; /* Ensure header stays above other content */
+  }
+  
+  /* Logo Size Control */
+  .logo {
+    max-height: 50px;
+    width: auto;
+  }
+  
+  /* Navbar Links Styling */
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+  }
+  
+  .navbar-buttons .btn {
+    border-radius: 20px;
+    font-size: 0.875rem;
+  }
+  
+  /* Sidebar for Small Screens */
+  .sidebar {
+    height: 100%; /* Full height */
+    width: 0; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 9999;
+  }
+  
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #575757;
+  }
+  
+  /* Close Button in Sidebar */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  /* Sidebar Button Styling for Login/Sign Up */
+  .sidebar .btn {
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  /* Ensure no horizontal scroll on any device */
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 992px) {
+    /* Hide desktop navigation on small screens */
+    .navbar-collapse {
+      display: none !important;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .navbar-nav .nav-link, .navbar-buttons .btn {
+      font-size: 0.9rem;
+    }
+  }
+
+
+/* Hero Banner */
+.hero-banner .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -40px;
+  }
+  .hero-banner h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .hero-banner p {
+    color: #ddd;
+    font-size: 1.2rem;
+  }
+  .hero-banner .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Popular Categories */
+  .category-card {
+    border: none;
+    transition: transform 0.3s;
+  }
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Featured Products */
+  .product-card {
+    border: none;
+    transition: box-shadow 0.3s;
+  }
+  .product-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  .product-card .btn-primary {
+    margin-top: 10px;
+  }
+  
+  /* Customer Testimonials */
+  .customer-testimonials {
+    background-color: #f8f9fa;
+  }
+  .testimonial {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+  }
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+  }
+  .testimonial p {
+    font-style: italic;
+  }
+  .testimonial small {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-banner h2 {
+      font-size: 1.8rem;
+    }
+    .section-title {
+      font-size: 1.8rem;
+    }
+  }
+
+  
+
+  /* Footer */
+.footer {
+    background-color: #343a40; /* Same color as header */
+    color: #f8f9fa;
+  }
+  
+  .footer h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    color: #007bff; /* Hover color for links */
+  }
+  
+  .footer .newsletter-form {
+    max-width: 100%;
+  }
+  
+  .footer .input-group {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .footer .input-group-append button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .footer .input-group-append button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer .text-center {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer h5 {
+      font-size: 1.3rem;
+    }
+  
+    .footer p {
+      font-size: 0.9rem;
+    }
+  
+    .footer .input-group {
+      max-width: 100%;
+    }
+  
+    .footer .input-group-append button {
+      width: 100%;
+    }
+  }
+  
+  #about-us {
+    background-color: #f8f9fa; /* Light background for readability */
+  }
+  
+  #about-us .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #about-us p {
+    font-size: 1.125rem;
+    color: #555;
+  }
+  
+  #about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
